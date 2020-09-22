@@ -69,8 +69,9 @@ td{
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
-  background-color: #7e0830;
+  background-color: #7e0820;
 }
+
 tr:nth-child(even){
   background-color: #d1d1d1;
 }
