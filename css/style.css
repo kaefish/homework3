@@ -13,8 +13,9 @@ body{
   font-size: 16px;
   margin: 1.2em;
   font-family: 'Andika', sans-serif;
-  background-size: cover ;
   background-position: center;
+  background: url("../images/pigeon-background.JPEG") #dddddd center no-repeat;
+  background-size: cover;
 }
 
 main{
@@ -24,6 +25,8 @@ main{
 h1{
   color: #c12258;
   font-size: 2em;
+  line-height: 2;
+  text-align: center;
 }
 
 caption{
@@ -31,15 +34,20 @@ caption{
 }
 
 p{
-
+  padding-top: 15px;
 }
 
 a{
-
+  font-size: 16px;
+  color: #c12258;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
 }
 
 table{
-    border: 2px solid #000000;
+  border: 2px solid #000000;
+  margin: auto;
+  border-radius: 10px;
 }
 
 .colhead{
@@ -48,27 +56,70 @@ table{
 }
 
 .rowhead{
-
+  border-style: solid;
+  border-width: 2px 2px 0px 0px;
+  border-color: #000000;
 }
 
 td{
-  
+  text-align: center;
+  border-top: 2px solid #000000;
+  padding: 10px;
+}
+
+.colhead{
+  min-width: 125px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #7e0830;
+}
+tr:nth-child(even){
+  background-color: #d1d1d1;
 }
 
 tr{
 
 }
 
+tr:hover{
+  background-color: rgba(126,8,48,.25);
+}
+
 *{
 
 }
 
-thead tr:first-child th:first-child{}
+thead tr:first-child th:first-child{
+  border-radius: 10px 0px 0px 0px;
+}
+
+thead tr:first-child th:last-child{
+  border-radius: 0px 10px 0px 0px;
+}
+
+tbody tr:last-child th:first-child{
+  border-radius: 0px 0px 0px 10px;
+}
+
+tbody tr:last-child td:last-child{
+  border-radius: 0px 0px 10px 0px;
+}
+
+:focus{
+  border: 3px;
+  border-style: dashed;
+  border-color: #417243;
+}
 
 footer{
   width:100%;
   background:#000000;
   text-align:center;
   color: #FFFFFF;
+  min-height: 75px;
+  bottom: 0;
+  position: fixed;
 }
 
